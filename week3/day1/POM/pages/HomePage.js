@@ -6,6 +6,7 @@ class HomePage {
         return this;
     }
     async displayWelcomeMSg() {
+
         console.log(await element(by.tagName('h2')).getText())
         return this;
     }
