@@ -4,21 +4,8 @@ import { browser, $ } from "protractor"
 describe('Learn Alert & Frames', () => {
 
     it('Exception', async () => {
-        expect('').toBeFalse
         browser.waitForAngularEnabled(false)
         browser.get('http://leaftaps.com/opentaps/control/main')
-        try {
-            await $('#usernam').sendKeys('demo')
-        } catch (error) {
-            console.log(error);
-        }
-        // try {
-        //     $('#usernam').getText()
-        //         .then(r => {
-        //             console.log(r);
-        //         })
-        // } catch (error) {
-        //     console.log(error);
     })
 
     xit('Frames', async () => {
